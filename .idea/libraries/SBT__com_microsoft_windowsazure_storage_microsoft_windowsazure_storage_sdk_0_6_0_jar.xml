@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: com.microsoft.windowsazure.storage:microsoft-windowsazure-storage-sdk:0.6.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.microsoft.windowsazure.storage/microsoft-windowsazure-storage-sdk/jars/microsoft-windowsazure-storage-sdk-0.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.microsoft.windowsazure.storage/microsoft-windowsazure-storage-sdk/srcs/microsoft-windowsazure-storage-sdk-0.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
