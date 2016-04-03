@@ -19,9 +19,11 @@ Prepare Kafka:
 Prepare Phoenix:
 
 Run SQLLINE: 
+
 /usr/hdp/2.3.4.0-3485/phoenix/bin/sqlline.py sandbox.hortonworks.com:2181:/hbase-unsecure
 
 Create the two tables:
+
 CREATE TABLE SALES ( ID BIGINT NOT NULL,  
 		     DATE DATE,  
      		     FIRSTNAME VARCHAR(200),  
@@ -38,6 +40,7 @@ CREATE TABLE PRODUCTSALES ( PRODUCT VARCHAR(200) NOT NULL,
 	CONSTRAINT PK PRIMARY KEY (PRODUCT, DATE));
 
 Run the application with:
+
 spark-submit --master local  --class org.apache.spark.ben.KafkaToPhoenix KafkaToPhoenix-assembly-1.0.jar
 
 Test application with:
@@ -45,8 +48,10 @@ Test application with:
 /usr/hdp/2.3.4.0-3485/kafka/bin/kafka-console-producer.sh  --broker-list sandbox.hortonworks.com:6667 --topic salestopic
 
 And copy and paste some delimited rows into it like ( make sure the id is unique ):
+
 01|2016-04-01 18:20:00|Klaus|Kinski|Coca-Cola|0.89
 
 See results in SQLLINE:
+
 SELECT * from SALES;
 SELECT * FROM PRODUCTSALES;
