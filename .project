@@ -1,5 +1,5 @@
 <projectDescription>
-  <name>CyberSyslog</name>
+  <name>KafkaToPhoenix</name>
   <buildSpec>
     <buildCommand>
       <name>org.scala-ide.sdt.core.scalabuilder</name>
